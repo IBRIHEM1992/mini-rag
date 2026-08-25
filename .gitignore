@@ -205,3 +205,6 @@ Beta
 2 / 10
 used queries
 1
+# mini-rag local knowledge base
+/data/*
+!/data/.gitkeep
