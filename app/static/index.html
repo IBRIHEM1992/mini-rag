@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>mini-rag</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<main>
+  <header><p class="eyebrow">YOUR PRIVATE KNOWLEDGE BASE</p><h1>mini-rag</h1><p>Upload a document, then ask questions grounded in it.</p></header>
+  <section class="card"><h2>1. Add knowledge</h2><form id="upload-form"><label class="dropzone">Choose a TXT, Markdown, or PDF file<input id="file" type="file" accept=".txt,.md,.markdown,.pdf" required></label><button>Upload document</button></form><p id="upload-status" class="status"></p><ul id="documents" class="documents"></ul></section>
+  <section class="card"><h2>2. Ask a question</h2><form id="question-form"><textarea id="question" rows="3" placeholder="What would you like to know?" required></textarea><button>Find answer</button></form><p id="query-status" class="status"></p><article id="answer" hidden><h3>Answer</h3><div id="answer-text"></div><h3>Retrieved sources</h3><div id="sources"></div></article></section>
+</main><script src="/static/app.js"></script>
+</body></html>
